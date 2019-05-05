@@ -1,0 +1,40 @@
+.header {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:40px;
+    left:0;
+    right:0;
+    max-width: 1280px;
+    margin: 0 auto;
+    &__content {
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    &__brand {
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+        &:after {
+            position: absolute;
+            top:0;
+            left: 100%;
+            content: "Start over";
+            opacity: 0;
+            display:inline-block;
+            transform: translateX(50%);
+            transition: all .1s ease;
+            margin-left: 10px;
+            text-transform: lowercase;
+            white-space:nowrap;
+        }
+        &:hover {
+            &:after {
+                opacity: .5;
+                transform: translateX(0%);
+            }
+        }
+    }
+}
