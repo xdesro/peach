@@ -34,50 +34,13 @@
     />
     <section class="section section--icons">
       <ul class="icons-list">
-        <!-- <li class="icons-list__item" v-for="(socialLink, index) of socialLinks" :key="index">
+        <li
+          v-for="(socialLink, index) of socialLinks"
+          :key="index"
+          class="icons-list__item"
+        >
           <a class="icons-list__link" :href="socialLink.url">
-
-          </a>
-        </li> -->
-        <li class="icons-list__item">
-          <a class="icons-list__link" href="https://twitter.com/xdesro">
-            <IconTwitter class="icons-list__icon" />
-          </a>
-        </li>
-        <li class="icons-list__item">
-          <a class="icons-list__link" href="https://codepen.io/xdesro">
-            <IconCodepen class="icons-list__icon" />
-          </a>
-        </li>
-        <li class="icons-list__item">
-          <a class="icons-list__link" href="https://github.com/xdesro/">
-            <IconGithub class="icons-list__icon" />
-          </a>
-        </li>
-        <li class="icons-list__item">
-          <a class="icons-list__link" href="https://instagram.com/xdesro/">
-            <IconInstagram class="icons-list__icon" />
-          </a>
-        </li>
-        <li class="icons-list__item">
-          <a class="icons-list__link" href="https://twitch.tv/xdesro/">
-            <IconTwitch class="icons-list__icon" />
-          </a>
-        </li>
-        <li class="icons-list__item">
-          <a
-            class="icons-list__link"
-            href="https://stackoverflow.com/users/7868234/henry-desroches"
-          >
-            <IconStackoverflow class="icons-list__icon" />
-          </a>
-        </li>
-        <li class="icons-list__item">
-          <a
-            class="icons-list__link"
-            href="https://www.linkedin.com/in/henrydesroches"
-          >
-            <IconLinkedin class="icons-list__icon" />
+            <Icon :icon="socialLink.name" class="icons-list__icon" />
           </a>
         </li>
       </ul>
@@ -87,35 +50,26 @@
 
 <script>
 import Section from '~/components/section'
-import IconTwitter from '~/components/icons/IconTwitter'
-import IconCodepen from '~/components/icons/IconCodepen'
-import IconGithub from '~/components/icons/IconGithub'
-import IconInstagram from '~/components/icons/IconInstagram'
-import IconTwitch from '~/components/icons/IconTwitch'
-import IconStackoverflow from '~/components/icons/IconStackoverflow'
-import IconLinkedin from '~/components/icons/IconLinkedin'
+import Icon from '~/components/Icon'
 
 export default {
   components: {
     Section,
-    IconTwitter,
-    IconCodepen,
-    IconGithub,
-    IconInstagram,
-    IconTwitch,
-    IconStackoverflow,
-    IconLinkedin
+    Icon
   },
   data() {
     return {
       socialLinks: [
-        { link: 'Twitter', url: 'https://google.com' },
-        { link: 'Codepen', url: 'https://google.com' },
-        { link: 'Github', url: 'https://google.com' },
-        { link: 'Instagram', url: 'https://google.com' },
-        { link: 'Twitch', url: 'https://google.com' },
-        { link: 'Stackoverflow', url: 'https://google.com' },
-        { link: 'Linkedin', url: 'https://google.com' }
+        { name: 'twitter', url: 'https://twitter.com/xdesro' },
+        { name: 'codepen', url: 'https://codepen.io/xdesro' },
+        { name: 'github', url: 'https://github.com/xdesro' },
+        { name: 'instagram', url: 'https://instagram.com/xdesro' },
+        { name: 'twitch', url: 'https://twitch.tv/xdesro' },
+        {
+          name: 'stackoverflow',
+          url: 'https://stackoverflow.com/users/7868234/henry-desroches'
+        },
+        { name: 'linkedin', url: 'https://www.linkedin.com/in/henrydesroches' }
       ]
     }
   }
