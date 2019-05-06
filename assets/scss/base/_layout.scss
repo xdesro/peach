@@ -1,26 +1,29 @@
-*, *:before, *:after {
-    box-sizing: border-box;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 body {
-    background-color: var(--color-base);
+  background-color: var(--color-base);
 }
 .container {
-    width: 1280px;
-    max-width: 100%;
-    margin: 0 auto;
+  width: 1280px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 .icons-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display:grid;
-    grid-auto-flow:column;
-    justify-content: space-between;
-    align-content: center;
-    &__link {
-        text-decoration: none;
-    }
-    &__icon {
-        width: 48px;
-    }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-content: center;
+  &__link {
+    text-decoration: none;
+  }
+  &__icon {
+    width: 48px;
+  }
 }

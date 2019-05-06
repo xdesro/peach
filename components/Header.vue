@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header container">
     <p class="header__content">
       <a class="header__brand" href="/">Henry Desroches</a>
     </p>
