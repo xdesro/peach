@@ -8,25 +8,17 @@
     />
     <Section
       :content="[
-        `I’ve worked on projects ranging from music e-commerce
-    shops, large scale
-    end-to-end mortgage fullfilment <a href='https://promontech.com'
-      >app ecosystems</a
-    >, and <a href='https://divinegoddessjessica.com'>dominatrix websites</a>.`
+        `I’ve worked on projects ranging from music e-commerce shops, large scale end-to-end mortgage fullfilment <a href='https://promontech.com'>app ecosystems</a>, and <a href='https://divinegoddessjessica.com'>dominatrix websites</a>.`
       ]"
     />
     <Section
       :content="[
-        `I’ve been in interaction- and CSS-focused UI
-    development jobs since 2015, most recently working at <a href='https://promontech.com'
-      >Promontech</a> and
-    <a href='https://universalmind.com'>Universal Mind</a>. I’m always open to new opportunities in creative dev or
-    style-code-centric roles.`
+        `I’ve been in interaction- and CSS-focused UI development jobs since 2015, most recently working at <a href='https://promontech.com' >Promontech</a> and <a href='https://universalmind.com'>Universal Mind</a>. I’m always open to new opportunities in creative dev or style-code-centric roles.`
       ]"
     />
     <Section
       :content="[
-        `I’ve written articles about <a href='#'>SVG techniques and animation</a>, VueJS, and advanced Sass and style code architecture. I’ve also open-sourced a bunch of code, such as <a href='https://super.henry.codes/'>an Alfred app</a> that makes your text much, much ˢᵐᵃˡˡᵉʳ ᵃⁿᵈ ʰᵃʳᵈᵉʳ ᵗᵒ ʳᵉᵃᵈ or a <a href='https://github.com/xdesro/threejs-webpack-starter'>simple Webpack/ThreeJS boilerplate</a>.`
+        `I’ve also open-sourced a bunch of code, such as <a href='https://super.henry.codes/'>an Alfred app</a> that makes your text much, much ˢᵐᵃˡˡᵉʳ ᵃⁿᵈ ʰᵃʳᵈᵉʳ ᵗᵒ ʳᵉᵃᵈ or a <a href='https://github.com/xdesro/threejs-webpack-starter'>simple Webpack/ThreeJS boilerplate</a>.`
       ]"
     />
     <Section
@@ -48,35 +40,20 @@
         </li>
       </ul>
     </section>
-    <svg class="displacement-map">
-      <defs>
-        <filter id="turbulence" x="-10%" y="0%" width="120%" height="100%">
-          <feTurbulence
-            type="fractalNoise"
-            baseFrequency="0.002"
-            result="fracNoise"
-          />
-          <feDisplacementMap
-            in="SourceGraphic"
-            in2="blurredFracNoise"
-            scale="50"
-            xChannelSelector="R"
-            yChannelSelector="G"
-          />
-        </filter>
-      </defs>
-    </svg>
+    <DisplacementSvg />
   </div>
 </template>
 
 <script>
 import Section from '~/components/Section'
 import Icon from '~/components/Icon'
+import DisplacementSvg from '~/components/DisplacementSvg'
 
 export default {
   components: {
     Section,
-    Icon
+    Icon,
+    DisplacementSvg
   },
   data() {
     return {

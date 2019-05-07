@@ -24,19 +24,6 @@
     text-decoration: none;
     color: inherit;
     position: relative;
-    &:after {
-      position: absolute;
-      top: 0;
-      left: 100%;
-      content: 'Start over';
-      opacity: 0;
-      display: inline-block;
-      transform: translateX(50%);
-      transition: all 0.1s ease;
-      margin-left: 10px;
-      text-transform: lowercase;
-      white-space: nowrap;
-    }
     &:hover {
       &:after {
         opacity: 0.5;
