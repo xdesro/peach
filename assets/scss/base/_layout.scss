@@ -14,6 +14,10 @@ body {
     padding: 0 10px;
   }
 }
+.displacement-map {
+  position: absolute;
+  visibility: hidden;
+}
 .icons-list {
   list-style-type: none;
   margin: 0;
