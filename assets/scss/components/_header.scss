@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top:30vh;
+  filter: url(#turbulence);
   @include screen(md) {
     position: fixed;
     top: 40px;
