@@ -4,3 +4,11 @@
         @content;
     }
 }
+@mixin ff-and-chrome {
+    @media screen and (min--moz-device-pixel-ratio:0) {
+        @content;
+    }
+    @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+        @content;
+    }
+}

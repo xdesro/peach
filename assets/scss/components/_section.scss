@@ -1,5 +1,7 @@
 .section {
-    filter: url(#turbulence);
+    @include ff-and-chrome {
+        filter: url(#turbulence);
+    }
     &:first-of-type {
         margin-top: 10vh;
         @include screen(md) {
@@ -12,12 +14,15 @@
     &__content {
         font-size: 32px;
         font-family: $font-serif;
+        
         @include screen(md) {
-        font-size: 64px;
-        line-height: 1.2;
+            font-size: 64px;
+            line-height: 1.2;
         }
         >a {
             color: inherit;
+            text-shadow: 1px 1px var(--color-base), -1px 1px var(--color-base), 1px -1px var(--color-base),-1px -1px var(--color-base);
+            border-bottom: 1px solid var(--color-primary);
         }
     }
 }
