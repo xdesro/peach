@@ -52,7 +52,7 @@
 </template>
 
 <script>
-import Section from '~/components/section'
+import Section from '~/components/Section'
 import Icon from '~/components/Icon'
 
 export default {
