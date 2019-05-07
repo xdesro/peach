@@ -1,0 +1,10 @@
+{
+    "name": "Henry Desroches || Creative Developer",
+    "short_name": "henry.codes",
+    "theme_color": "#ffe03d",
+    "background_color": "#ffe03d",
+    "display": "browser",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/"
+  }
