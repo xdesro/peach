@@ -2,6 +2,9 @@
   "editor.formatOnSave": true,
   "prettier.eslintIntegration": true,
   "vetur.format.defaultFormatter.html": "prettier",
+  "vetur.format.defaultFormatter.css": "prettier",
+  "vetur.format.defaultFormatter.scss": "prettier",
   "eslint.enable": true,
+  "eslint.autoFixOnSave": false,
   "eslint.validate": ["javascript", "javascriptreact", "vue"]
 }

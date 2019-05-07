@@ -9,26 +9,29 @@
     <Section
       :content="[
         `I’ve worked on projects ranging from music e-commerce
-    shops, large scale end-to-end mortgage fullfilment app ecosystems, and
-    dominatrix websites.`
+    shops, large scale
+    end-to-end mortgage fullfilment <a href='https://promontech.com'
+      >app ecosystems</a
+    >, and <a href='https://divinegoddessjessica.com'>dominatrix websites</a>.`
       ]"
     />
     <Section
       :content="[
         `I’ve been in interaction- and CSS-focused UI
-    development jobs since 2015, most recently working at Promontech and
-    Universal Mind. I’m always open to new opportunities in creative dev or
+    development jobs since 2015, most recently working at <a href='https://promontech.com'
+      >Promontech</a> and
+    <a href='https://universalmind.com'>Universal Mind</a>. I’m always open to new opportunities in creative dev or
     style-code-centric roles.`
       ]"
     />
     <Section
       :content="[
-        `I’ve written articles about <a href='#'>SVG techniques and animation</a>, VueJS, and advanced Sass and style code architecture. I’ve also open-sourced a bunch of code, such as an Alfred app that makes your text much, much ˢᵐᵃˡˡᵉʳ ᵃⁿᵈ ʰᵃʳᵈᵉʳ ᵗᵒ ʳᵉᵃᵈ or a simple Webpack/ThreeJS boilerplate.`
+        `I’ve written articles about <a href='#'>SVG techniques and animation</a>, VueJS, and advanced Sass and style code architecture. I’ve also open-sourced a bunch of code, such as <a href='https://super.henry.codes/'>an Alfred app</a> that makes your text much, much ˢᵐᵃˡˡᵉʳ ᵃⁿᵈ ʰᵃʳᵈᵉʳ ᵗᵒ ʳᵉᵃᵈ or a <a href='https://github.com/xdesro/threejs-webpack-starter'>simple Webpack/ThreeJS boilerplate</a>.`
       ]"
     />
     <Section
       :content="[
-        `I’m most active and reachable on Twitter or via email,
+        `I’m most active and reachable <a href='https://twitter.com/xdesro'>on Twitter</a> or <a href='mailto:yo@henry.codes'>via email</a>,
     but you can find me most places on the internet as @xdesro.`
       ]"
     />

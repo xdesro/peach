@@ -10,20 +10,28 @@ body {
   width: 1280px;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 10px;
+  @include screen(md) {
+    padding: 0 10px;
+  }
 }
 .icons-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-auto-flow: column;
   justify-content: space-between;
   align-content: center;
+  grid-auto-flow: column;
+  &__item {
+    margin-bottom: 32px;
+  }
   &__link {
     text-decoration: none;
   }
   &__icon {
-    width: 48px;
+    width: 32px;
+    @include screen(md) {
+      width: 48px;
+    }
   }
 }
