@@ -2,7 +2,7 @@
   <div class="sections">
     <Section
       :content="[
-        `Hi, I’m Henry Desroches.`,
+        `Hi, I’m <span class='is-outlined'>Henry Desroches.</span>`,
         `I’m a creative developer from Denver with a passion for CSS, animation, accessibility, and deleting code.`
       ]"
     />

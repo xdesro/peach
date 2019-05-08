@@ -4,7 +4,11 @@
   box-sizing: border-box;
 }
 body {
+  margin: 0;
+}
+.root {
   background-color: var(--color-base);
+  transition: .2s color ease-in-out;
 }
 .container {
   width: 1280px;
@@ -17,25 +21,4 @@ body {
 .displacement-map {
   position: absolute;
   visibility: hidden;
-}
-.icons-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  justify-content: space-between;
-  align-content: center;
-  grid-auto-flow: column;
-  &__item {
-    margin-bottom: 32px;
-  }
-  &__link {
-    text-decoration: none;
-  }
-  &__icon {
-    width: 32px;
-    @include screen(md) {
-      width: 48px;
-    }
-  }
 }

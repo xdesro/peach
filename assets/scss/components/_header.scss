@@ -3,9 +3,12 @@
   justify-content: space-between;
   align-items: center;
   margin-top:30vh;
+  z-index: 1;
+  color: var(--color-primary);
+
   @include ff-and-chrome {
-    filter: url(#turbulence);
-}
+    filter: url(#turbulence--animated);
+  }
   @include screen(md) {
     position: fixed;
     top: 40px;

@@ -16,5 +16,5 @@ $font-serif: 'Tiempos Fine Test', serif;
 }
 body {
   font-family: $font-sans;
-  color: var(--color-primary);
+  transition: .2s color ease-in-out;
 }

@@ -1,0 +1,58 @@
+
+.sections {
+  color: var(--color-primary);
+
+  @include ff-and-chrome {
+    filter: url(#turbulence);
+  }
+  padding-top: 10vh;
+  padding-bottom: 50vh;
+  @include screen(md) {
+    padding-top:50vh;
+  }
+}
+.section {
+    &__content {
+        font-size: 32px;
+        font-family: $font-serif;
+        
+        @include screen(md) {
+            font-size: 64px;
+            line-height: 1.2;
+        }
+        .is-outlined {
+          -webkit-text-fill-color: transparent;
+          -webkit-text-stroke: 1px var(--color-primary);
+          @include ff-and-chrome {
+            filter: url(#turbulence--animated);
+          }
+        }
+        >a {
+            color: inherit;
+            text-shadow: 1px 1px var(--color-base), -1px 1px var(--color-base), 1px -1px var(--color-base),-1px -1px var(--color-base);
+        }
+    }
+}
+.icons-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: space-between;
+    align-content: center;
+    grid-auto-flow: column;
+    &__item {
+      margin-bottom: 32px;
+    }
+    &__link {
+      text-decoration: none;
+    }
+    &__icon {
+      width: 32px;
+      fill: var(--color-primary);
+      @include screen(md) {
+        width: 48px;
+      }
+    }
+  }
+  
