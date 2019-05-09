@@ -76,7 +76,8 @@ export default {
   },
   mounted() {
     emergence.init({
-      reset: false
+      reset: false,
+      elemCushion: 0.5
     })
   }
 }
