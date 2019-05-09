@@ -1,10 +1,10 @@
-# henry-codes-nuxt
+# 🎉henry-codes-nuxt
 
-> Personal site and portfolio for twitter user xdesro
+Personal site and portfolio for famous twitter user xdesro. Bootstrapped with `create-nuxt-app`.
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm install
 
