@@ -4,7 +4,7 @@
       <filter id="turbulence" x="-10%" y="0%" width="120%" height="100%">
         <feTurbulence
           type="fractalNoise"
-          baseFrequency="0.002"
+          baseFrequency="0.001"
           result="fracNoise"
         />
         <!-- <feGaussianBlur stdDeviation="" /> -->

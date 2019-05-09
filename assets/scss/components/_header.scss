@@ -2,34 +2,40 @@
   display: grid;
   justify-content: space-between;
   align-items: center;
-  margin-top:30vh;
+  padding-top: 30vh;
   z-index: 1;
   color: var(--color-primary);
+
   @include ff-and-chrome {
     filter: url(#turbulence--animated);
   }
+
   @include screen(md) {
     position: fixed;
     top: 40px;
     left: 0;
     right: 0;
     grid-auto-flow: column;
-    margin-top: 0;
+    padding-top: 0;
   }
+
   &__content {
     text-transform: uppercase;
     font-weight: 800;
     margin-bottom: -10px;
+
     @include screen(md) {
       margin-bottom: inherit;
     }
   }
+
   &__brand {
     text-decoration: none;
     color: inherit;
     position: relative;
+
     &:hover {
-      &:after {
+      &::after {
         opacity: 0.5;
         transform: translateX(0%);
       }

@@ -1,8 +1,9 @@
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   font-size: 100%;
@@ -11,17 +12,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
+
 .root {
   background-color: var(--color-base);
 }
+
 .container {
   width: 1280px;
   max-width: 100%;
   margin: 0 auto;
-  @include screen(md) {
-    padding: 0 10px;
-  }
+  padding: 0 10px;
+  // @include screen(md) {
+  //   padding: 0 10px;
+  // }
 }
+
 .displacement-map {
   position: absolute;
   visibility: hidden;

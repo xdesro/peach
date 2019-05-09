@@ -1,5 +1,5 @@
 <template>
-  <div class="sections">
+  <div class="sections container">
     <Section
       :content="[`Hi, I’m <span class='is-outlined'>Henry Desroches.</span>`]"
     />
@@ -29,7 +29,7 @@
     but you can find me most places on the internet as @xdesro.`
       ]"
     />
-    <section class="section section--icons">
+    <section class="section section--icons" data-emergence="hidden">
       <ul class="icons-list">
         <li
           v-for="(socialLink, index) of socialLinks"
@@ -75,7 +75,9 @@ export default {
     }
   },
   mounted() {
-    emergence.init()
+    emergence.init({
+      reset: false
+    })
   }
 }
 </script>
