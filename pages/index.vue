@@ -1,8 +1,10 @@
 <template>
   <div class="sections">
     <Section
+      :content="[`Hi, I’m <span class='is-outlined'>Henry Desroches.</span>`]"
+    />
+    <Section
       :content="[
-        `Hi, I’m <span class='is-outlined'>Henry Desroches.</span>`,
         `I’m a creative developer from Denver with a passion for CSS, animation, accessibility, and deleting code.`
       ]"
     />
@@ -48,6 +50,7 @@
 import Section from '~/components/Section'
 import Icon from '~/components/Icon'
 import DisplacementSvg from '~/components/DisplacementSvg'
+import emergence from 'emergence.js'
 
 export default {
   components: {
@@ -70,6 +73,9 @@ export default {
         { name: 'linkedin', url: 'https://www.linkedin.com/in/henrydesroches' }
       ]
     }
+  },
+  mounted() {
+    emergence.init()
   }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section class="section" data-emergence="hidden">
     <p
       v-for="(paragraph, index) of content"
       :key="index"

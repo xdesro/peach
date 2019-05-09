@@ -4,17 +4,20 @@ $font-serif: 'Tiempos Fine Test', serif;
 
 @font-face {
   font-family: 'Tiempos Fine Test';
-  src: url('~assets/fonts/tiempos-fine/TiemposFineTest-Medium.woff');
+  src: url('~assets/fonts/tiempos-fine/TiemposFineWeb-Medium.woff2');
+  src: url('~assets/fonts/tiempos-fine/TiemposFineWeb-Medium.woff') format('woff'),
+    url('~assets/fonts/tiempos-fine/TiemposFineWeb-Medium.eot') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Tiempos Fine Test';
-  src: url('~assets/fonts/tiempos-fine/TiemposFineTest-MediumItalic.woff');
+  src: url('~assets/fonts/tiempos-fine/TiemposFineWeb-MediumItalic.woff2');
+  src: url('~assets/fonts/tiempos-fine/TiemposFineWeb-MediumItalic.woff') format('woff'),
+    url('~assets/fonts/tiempos-fine/TiemposFineWeb-MediumItalic.eot') format('embedded-opentype');
   font-weight: normal;
   font-style: italic;
 }
 body {
   font-family: $font-sans;
-  transition: .2s color ease-in-out;
 }

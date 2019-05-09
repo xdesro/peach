@@ -7,6 +7,7 @@
           baseFrequency="0.002"
           result="fracNoise"
         />
+        <!-- <feGaussianBlur stdDeviation="" /> -->
         <feDisplacementMap
           in="SourceGraphic"
           in2="blurredFracNoise"

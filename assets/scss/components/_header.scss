@@ -5,7 +5,6 @@
   margin-top:30vh;
   z-index: 1;
   color: var(--color-primary);
-
   @include ff-and-chrome {
     filter: url(#turbulence--animated);
   }
