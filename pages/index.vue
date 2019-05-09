@@ -10,7 +10,7 @@
     />
     <Section
       :content="[
-        `I’ve worked on projects ranging from music e-commerce shops, large scale end-to-end mortgage fullfilment <a href='https://promontech.com'>app ecosystems</a>, and <a href='https://divinegoddessjessica.com'>dominatrix websites</a>.`
+        `I’ve coded and designed projects ranging from Dungeons & Dragons <a href='https://crit.fail'>companion apps</a>, large scale end-to-end mortgage fullfilment <a href='https://promontech.com'>app ecosystems</a>, and <a href='https://divinegoddessjessica.com'>websites for dominatrices</a>.`
       ]"
     />
     <Section
