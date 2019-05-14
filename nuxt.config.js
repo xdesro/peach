@@ -7,6 +7,9 @@ export default {
    ** Headers of the page
    */
   head: {
+    htmlAttrs: {
+      lang: 'en'
+    },
     title: 'Henry Desroches || Creative Developer',
     meta: [
       { charset: 'utf-8' },

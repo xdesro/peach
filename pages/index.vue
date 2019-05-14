@@ -1,5 +1,5 @@
 <template>
-  <div class="sections container">
+  <main class="sections container">
     <Section
       :content="[`Hi, I’m <span class='is-outlined'>Henry Desroches.</span>`]"
     />
@@ -36,14 +36,18 @@
           :key="index"
           class="icons-list__item"
         >
-          <a class="icons-list__link" :href="socialLink.url">
+          <a
+            class="icons-list__link"
+            :href="socialLink.url"
+            :aria-label="socialLink.name + ' icon'"
+          >
             <Icon :icon="socialLink.name" class="icons-list__icon" />
           </a>
         </li>
       </ul>
     </section>
     <DisplacementSvg />
-  </div>
+  </main>
 </template>
 
 <script>
